@@ -1,0 +1,134 @@
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    color: white;
+    background-color: #343a40;
+    padding: 20px;
+    margin: 0;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.container {
+    padding: 0;
+    margin: 0;
+}
+
+.search-container {
+    background: #f8f9fa;
+    height: 100%;
+    width: 20rem;
+    position: fixed;
+    left: 0;
+    padding-top: 20px;
+}
+
+.search-bar input[type=text] {
+    float: left;
+    border: 1px solid grey;
+    font-size: 15px;
+    width: 80%;
+}
+
+.search-bar button {
+    float: left;
+    border: 1px solid grey;
+    font-size: 15px;
+    width: 20%;
+    background: #2196F3;
+}
+
+.search-bar button:hover {
+    background: #0b7dda;
+  }
+
+.card {
+    display: inline-block;
+    width: 100%;
+}
+
+.card-body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #007bff;
+    font-size: 18px;
+    color: white;
+    display: inline-block;
+    border: solid #1b998b 2px;
+    margin: 10px;
+    margin-right: 0;
+    padding: 10px;
+}
+
+.search-history { 
+    margin-top: 1rem;
+}
+
+.cityBtn {
+    padding: 10px;
+    width: 15rem;
+    background: #ffc80f;
+    border:none;
+}
+
+.history-list {
+    border-radius: 3px;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.clear {
+    background-color: #d23f33;
+    border: none;
+    color: black;
+    padding: 5px;
+
+}
+.main, .forecast-card {
+    margin-left: 20rem;
+    padding-top: 20px;
+}
+
+.weather-card {
+    box-shadow: 0 0 3px 2px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.highlight-good {
+    background-color: darkgreen;
+    color: white;
+}
+
+.highlight-mild {
+    background-color: yellow;
+    color: white;
+}
+
+.highlight-warning {
+    background-color: orange;
+    color: white;
+}
+
+.highlight-veryhigh {
+    background-color: red;
+    color: white;
+}
+
+.highlight-danger {
+    background-color: darkmagenta;
+    color: white;
+}
