@@ -39,7 +39,6 @@ $(document).ready(function () {
             let previousCity = JSON.parse(localStorage.getItem("savedSearches"));
             if (previousCity) {
                 previousCity.push(response.name);
-                console.log(response.name)
                 localStorage.setItem("savedSearches", JSON.stringify(previousCity));
             } else {
                 savedSearches.push(response.name)
@@ -50,7 +49,7 @@ $(document).ready(function () {
             var weatherIcon = "http://openweathermap.org/img/wn/" + weatherIconCode + ".png"
 
             $(".main-icon").attr("src", weatherIcon)
-            searchedCity.text(cityName + " " + date + " ");
+            searchedCity.text(response.name + " " + date + " ");
 
             let tempConversion = ((response.main.temp - 273.15) * 9/5 + 32).toFixed(2);
 
@@ -104,7 +103,6 @@ $(document).ready(function () {
                 method: "GET"
             })
             .then(function(responseForecast) {
-                console.log(responseForecast)
 
                 let forecastIconCode = responseForecast.list[selectArr].weather[0].icon;
                 var weatherIcon = "http://openweathermap.org/img/wn/" + forecastIconCode + ".png"
