@@ -24,6 +24,9 @@ $(document).ready(function () {
         localStorage.clear();
     });
 
+    $("header").click(function() {
+        location.reload(true);
+    })
 
     function initiateSearch(cityName) {
 
