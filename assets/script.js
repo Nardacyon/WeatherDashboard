@@ -62,7 +62,7 @@ $(document).ready(function () {
 
             let latitude = response.coord.lat;
             let longitude = response.coord.lon;
-            let uvIndexUrl = "http://api.openweathermap.org/data/2.5/uvi?appid=" + APIKey + "&lat=" + latitude + "&lon=" + longitude;
+            let uvIndexUrl = "http://api.openweathermap.org/data/2.5/uvi?appid=" + APIKey + "&lat=" + latitude + "&lon=" + longitude + "&units=imperial";
 
             $.ajax({
                 type: "GET",
