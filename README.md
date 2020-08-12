@@ -2,7 +2,7 @@
 
 Github Pages link: https://nardacyon.github.io/WeatherDashboard/
 
-![]dashboardps.png
+![]./assets/dashboardps.png
 
 This is a Weather App. It's function is to display a weather report of the location that the user inputs. If the user wants to see the weather outlook for a given city. 
 
